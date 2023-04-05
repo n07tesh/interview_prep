@@ -3,14 +3,15 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By 
 import time
 from bs4 import BeautifulSoup
-import pandas as pd
+# import pandas as pd
 
+n = 1
 class Xpath:
     url = 'https://mathup.com/games/crossbit'
     play_button = '/html/body/div/div[1]/div[1]/div[1]/div/div/div[2]/div/div/div[2]/div[3]/div[1]'
     web_driver_loc = r'D:\web_driver\chromedriver.exe'
     div_class = 'GamePostStart_info__Rwi7G'
-for i in range(10):
+while n <=10:
     def web_driver():
         try:
             options = Options()
