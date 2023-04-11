@@ -51,7 +51,8 @@ def hourglassSum(arr):
             # If previous sum is less
             # then current sum then
             # update new sum in max_sum
-          
+
+
     
 
 if __name__ == '__main__':
@@ -64,3 +65,18 @@ if __name__ == '__main__':
     # C = 5
     x = hourglassSum(arr)
     print(f"Maximum sum of hour glass = {x}")
+
+# optimize Approch
+def hourglassSum(arr):
+    count = -64
+    row = 0
+    col = 0
+    while row < 4 :
+        temp = arr[row][col] + arr[row][col+1]+arr[row][col+2]+arr[row+1][col+1] + arr[row+2][col]+arr[row+2][col+1]+ arr[row+2][col+2]
+        if temp > count:
+            count = temp
+        col +=1
+        if col == 4:
+            col = 0
+            row +=1
+    return count
