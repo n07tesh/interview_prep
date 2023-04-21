@@ -1,4 +1,4 @@
-string  = "Py!th#onD%evelo&per_s"
+string  = "Py!th#onD%evelo&per_s "
 # import ascii 
 # count number of symbols
 count = 0
