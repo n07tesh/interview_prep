@@ -25,6 +25,7 @@ def web_driver():
         time.sleep(4)
         action = ActionChains(driver)
         # get element 
+        # css selector of two types #(id css selector) and .(class css selector)
         element = driver.find_element(By.CSS_SELECTOR,'#es_subscription_form_submit_63e87c1868ac1')
         action.move_to_element(element).perform()
         element.click()
