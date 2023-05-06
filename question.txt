@@ -1,8 +1,16 @@
-Where is migration file in Django?
-How to solve migration problem in Django?
+1.Where is migration file in Django?
+Ans.Migration files in Django are usually stored in the "migrations" directory of an app. 
+    This directory is created automatically when you run the python manage.py makemigrations command.
+2.How to solve migration problem in Django?
+
 What does {% %} do in Django?
 What does {% %} mean in Django Python?
-What are the 4 types of migration?
+5.What are the 4 types of migration?
+Ans.In Django, there are four types of migrations:
+    Initial migration
+    Schema migration
+    Data migration
+    Optimization migration
 What are three types of migration streams?
 What is ORM in Django?
 What is the difference between migrate and Makemigrations?
