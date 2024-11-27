@@ -1,0 +1,27 @@
+project/
+├── app/
+│   ├── __init__.py           # Application Factory
+│   ├── models.py             # Database Models
+│   ├── routes/
+│   │   ├── __init__.py       # Init for Routes
+│   │   ├── auth.py           # Authentication Routes
+│   │   ├── main.py           # Main Dashboard Routes
+│   ├── jobs/
+│   │   ├── __init__.py       # Init for Jobs
+│   │   ├── claims_processing.py   # Claims Processing Job
+│   │   ├── bookings_processing.py # Bookings Processing Job
+│   │   └── utils.py          # Utility Functions
+│   ├── templates/            # HTML Templates
+│   │   ├── login.html        # Login Page
+│   │   ├── dashboard.html    # Dashboard Page
+│   ├── static/
+│   │   └── styles.css        # Styling
+├── config/
+│   ├── __init__.py           # Config Loader
+│   ├── base.py               # Base Config
+│   ├── qa.py                 # QA Config
+│   ├── production.py         # Production Config
+├── migrations/               # Flask-Migrate Files
+├── run.py                    # Entry Point
+├── requirements.txt          # Dependencies
+└── README.md                 # Documentation
